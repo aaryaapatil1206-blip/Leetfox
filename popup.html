@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LeetFox</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!-- LEFT FOX AREA -->
+        <div id="foxBox">
+            <img id="foxImage"
+                 src="assets/fox_idle.gif"
+                 style="width:180px;height:220px;">
+
+            <img id="confettiImage"
+                 src="assets/confetti.gif"
+                 style="position:absolute;
+                 top:0;
+                 left:0;
+                 width:330px;
+                 height:450px;
+                 display:none;">
+            
+
+        </div>
+
+        <!-- RIGHT SIDE UI -->
+        <div id="statsPanel">
+
+            <h1 id="streakDisplay">Streak: ...</h1>
+            <h2 id="xpDisplay">XP: ...</h2>
+
+            <p id="longestDisplay" style="font-size:12px; opacity:0.7;">
+                Longest streak: ...
+            </p>
+
+            <div class="ringRow">
+                <div class="ringBox">
+                    <canvas id="streakRing"></canvas>
+                    <p>Streak</p>
+                </div>
+
+                <div class="ringBox">
+                    <canvas id="xpRing"></canvas>
+                    <p>XP</p>
+                </div>
+            </div>
+
+            <div id="dailyGoalBox">
+                <p id="goalText">Daily goal: Solve 1 problem</p>
+                <div id="goalBar">
+                    <div id="goalFill"></div>
+                </div>
+            </div>
+
+            <div id="quoteBox">
+                <p id="quoteText">...</p>
+            </div>
+
+            <div id="badgeBox">
+                <img id="mainBadge"
+                     src="assets/badge.png"
+                     style="width:65px;height:65px;opacity:0.25;">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+
+</body>
+</html>

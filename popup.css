@@ -1,0 +1,97 @@
+/* popup.css – base layout + dark theme */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 330px;
+    height: 450px;
+    background: #0E0E0E;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* LEFT SIDE – FOX AREA */
+
+#foxBox {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+/* RIGHT SIDE – STATS AREA */
+
+#statsPanel {
+    width: 55%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.ringRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.ringBox {
+    width: 45%;
+    text-align: center;
+}
+
+.ringBox canvas {
+    width: 70px;
+    height: 70px;
+}
+
+
+#dailyGoalBox {
+    margin-top: 10px;
+}
+
+#goalBar {
+    margin-top: 5px;
+    width: 100%;
+    height: 6px;
+    background: #333;
+    border-radius: 3px;
+}
+
+#goalFill {
+    width: 0%;
+    height: 6px;
+    background: #32D74B;
+    border-radius: 3px;
+}
+
+#quoteBox {
+    margin-top: 15px;
+    font-size: 13px;
+    opacity: 0.8;
+    line-height: 16px;
+    text-align: center;
+}
+#badgeBox {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#mainBadge {
+    width: 65px;
+    height: 65px;
+    opacity: 0.25;
+}
